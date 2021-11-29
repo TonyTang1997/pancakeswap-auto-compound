@@ -26,7 +26,7 @@ pip3 install -r requirements.txt
 
 - Running the script 
 ```
-python3 main.py --privateAddress {your address} --privateKey {your private key} --inital 1000 --length 365
+python main.py --privateAddress {your address} --privateKey {your private key} --inital 1000 --length 365
 ```
 
 - Parameters instructions 
@@ -39,6 +39,12 @@ python3 main.py --privateAddress {your address} --privateKey {your private key} 
 | --length | int | lenght of time period holding this investment (in days) since now, i.e. 365 = holding for 1 year|
 | --approve | boolean | approve the pool to make transcation, set to True if you have not approved the CAKE/BNB farm on pancakeswap |
 
+## Video demonstration
+https://drive.google.com/file/d/17aVLU3i3QbNChERT8RhExTCBc-XabmJI/view?usp=sharing
+
+The video demonstrates that the script can be excuted with an infitie loop and calculating required values. But no harvesting was done due to insufficient amount of cake to harvest in demo account.
+
+However, all the action functions have been tested seperatly and should be working. 
 
 ## Algorithm 
 
