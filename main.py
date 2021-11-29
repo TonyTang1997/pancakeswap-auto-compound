@@ -24,6 +24,8 @@ cakeBnbABI = '[{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"",
 
 bnbAddress = web3.toChecksumAddress("0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c")
 
+# https://github.com/pancakeswap/pancake-frontend/blob/master/src/config/constants/farms.ts
+# pid can be found here
 cakeBnbPid = 251
 
 masterChefContract = web3.eth.contract(address=masterChefAddress, abi=masterChefABI)
@@ -81,7 +83,7 @@ def swapCakeBnb(address, key, gas_price):
     try:
         txn = panContract.functions.swapExactTokensForETHSupportingFeeOnTransferTokens(
             int(cakeBalance / 2),
-            0,
+            0, 
             [cakeAddress, bnbAddress],
             address,
             (int(time.time()) + 10000)

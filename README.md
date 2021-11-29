@@ -29,9 +29,9 @@ pip3 install -r requirements.txt
 python main.py --privateAddress {your address} --privateKey {your private key} --inital 1000 --length 365
 ```
 
-- Parameters instructions 
+- Arguments instructions 
 
-| Parameter     | Type           | Usage  |
+| Argument     | Type           | Usage  |
 | ------------- |:--------------:| ------:|
 | --privateAddress | str | your wallet address |
 | --privateKey| str | your private key |
