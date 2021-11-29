@@ -210,7 +210,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='auto compounding yield farming')
     parser.add_argument('--privateAddress', help="address")
     parser.add_argument('--privateKey', help="private key")
-    parser.add_argument('--inital', help="inital amount of investment")
+    parser.add_argument('--inital', help="inital amount of investment ( in unit of bnb )")
     parser.add_argument('--length', help="length of investment ( in days )")
     parser.add_argument('--approveToken', help="to approve LP token or not", default=False)
 

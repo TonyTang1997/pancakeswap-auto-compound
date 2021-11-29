@@ -21,7 +21,7 @@ git clone https://github.com/TonyTang1997/pancakeswap-auto-compound
 - Install required libraries 
 ```
 cd pancakeswap-auto-compound
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 ```
 
 - Running the script 
